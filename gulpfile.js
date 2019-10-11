@@ -1,8 +1,8 @@
 // 请求gulp
 const gulp=require("gulp");
-const sass=require('gulp-sass');
-const concat=require('gulp-concat');
-const mini=require('gulp-minify-css');
+// const sass=require('gulp-sass');
+// const concat=require('gulp-concat');
+// const mini=require('gulp-minify-css');
 // 执行监听任务
 //复制项目下的所有代码复制到服务器下的发布目录下
     gulp.task('copyallfile',async ()=>{
