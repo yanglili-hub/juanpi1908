@@ -203,5 +203,7 @@ label {
 
 #register .form-group .col-sm-10 #message {
   width: 264px;
+  height: 18px;
   background: pink;
-  margin-left: 118px; }
+  margin-left: 118px;
+  margin-top: 5px; }

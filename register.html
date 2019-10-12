@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/register.css">
+        <link rel="stylesheet" href="css/register.css">
    
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>注册页面</title>
+    <title>手机号注册页面</title>
 </head>
 <body>
     <!-- 卷皮图标 -->
@@ -23,33 +23,50 @@
                 <a href=""><p>新用户注册</p></a>
                 <i>/</i>
                 <a href=""><em>注册卷皮网，赢积分换好礼！</em></a>
-                <a href=""><span>已有账号  , </span> 立即注册</a>
+                <a href="login.html" target="_blank"><span>已有账号  , </span> 立即登录</a>
             </div>
               <form  id="register" action="">
-                    <!-- 手机号码： -->
-                    <div class="form-group">
-                      <label for="inputEmail3" id="telphone" class="col-sm-2 control-label">手机号码：</label> <span>或&nbsp;&nbsp;&nbsp;<a href="">邮箱注册</a></span>
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" >
-                      </div>
-                    </div>
+                 <!-- 手机号码： -->
+                  <div class="form-group">
+                      <label for="inputEmail3"  class="col-sm-2 control-label">手机号码：</label> <span>或&nbsp;&nbsp;&nbsp;<a href="">邮箱注册</a></span>
+                      <div  class="col-sm-10">
+                          <input id="telphone" type="email" class="form-control" id="inputEmail3" >
+                          <div class="message" id="telphoneMes">
+                              
+                          </div>
+                      </div>  
+                  </div>
                     <!-- 创建密码： -->
                     <div class="form-group">
                       <label for="inputPassword3" class="col-sm-2 control-label">创建密码：</label>
                       <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3" >
+                        <input id="createPass" maxlength="16" type="password" class="form-control" id="inputPassword3" >
+                        <div class="message" id="qiangdu">
+                            <span id="weak"> <i>弱</i></span>
+                            <span id="middle" ><i>中</i></span>
+                            <span id="strong" ><i>强</i></span>
+                        </div>
+                       
                       </div>
                     </div>
+                    <!-- 确认密码： -->
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">确认密码：</label>
                         <div class="col-sm-10">
-                          <input type="password" class="form-control" id="inputPassword3">
+                          <input id="querenPass" type="password" class="form-control" id="inputPassword3">
+                          <div class="message">
+                              
+                          </div>
                         </div>
                     </div>
+                    <!-- 验证码： -->
                     <div class="form-group" >
                         <label for="inputPassword3" id="wenzizuoyi" class="col-sm-2 control-label">验证码：</label>
                         <div class="col-sm-10">
                           <input type="password" id="yanZhengMa" class="form-control" id="inputPassword3" placeholder="验证码">
+                          <div class="message">
+                              
+                          </div>
                         <button  type="submit" id="huoQu" class="btn btn-default"> 获取短信验证码</button>
                     </div>
                     </div>
@@ -62,7 +79,7 @@
                       <div class="col-sm-offset-2 col-sm-10">
                         <div class="checkbox">
                           <label>
-                            <input type="checkbox"> 我已阅读并接受《卷皮用户协议》
+                            <input type="checkbox"> 我已阅读并接受 <a>《卷皮用户协议》</a>
                           </label>
                         </div>
                       </div>
@@ -94,6 +111,7 @@
     </div>
 </body>
 </html>
+<script src="js/jquery-1.12.2.min.js"></script>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/register.js"></script>
 <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>

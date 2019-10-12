@@ -26,7 +26,7 @@ $('#wenzi #left span').mouseout(function(){
     })
 })
 // ajax请求
-$("#btn btn-default")[0].onclick=function(){
+$("#btn btn-default").onclick=function(){
     let xhr = new XMLHttpRequest();
 
     xhr.open("post","php/2loginCheck.php",true);
@@ -34,6 +34,8 @@ $("#btn btn-default")[0].onclick=function(){
     xhr.onreadystatechange = function(){
         if(xhr.readyState==4 && xhr.status==200){
             if(xhr.responseText=="1"){
+                addCookie("username",$("#username").value,14);
+                addCookie("passname",$("#passname").value,14);
                 location.href="index.html";
             }else{
                 $("#messageBox").innerHTML = "亲，用户名或者密码不对";
