@@ -1,46 +1,57 @@
-// 请求gulp
-const gulp=require("gulp");
-// const sass=require('gulp-sass');
-// const concat=require('gulp-concat');
-// const mini=require('gulp-minify-css');
-// 执行监听任务
-//复制项目下的所有代码复制到服务器下的发布目录下
-    gulp.task('copyallfile',async ()=>{
-        gulp.src('./**/*')
-        .pipe(gulp.dest('E:\\PHP\\WWW\\fabu'))
-    })
-//监听文件，当开发文件有改动的时候，就会自动保存到www
-//     gulp.task('watchall',async ()=>{
-//         gulp.watch('*.html',async ()=>{
-//         gulp.src('*.html')
-//         .pipe(gulp.dest('E:\\PHP\\WWW\\fabu'))
-    
-//         gulp.watch('css/**/*',async ()=>{
-//             gulp.src('css/**/*')
-//             .pipe(mini())
-//             .pipe(gulp.dest('E:\\PHP\\WWW\\fabu\\css'))
-//         });
-//         gulp.watch('sassdemos/**/*',async ()=>{
-//             gulp.src('sassdemos/**/*')
-//             .pipe(sass())
-//             .pipe(mini())
-//             .pipe(gulp.dest('E:\\PHP\\WWW\\fabu\\sassdemos'))
-//         })
+var gulp = require("gulp");
+var sass = require("gulp-sass");
+var minicss= require('gulp-minify-css')
+
+gulp.task("watchall",async ()=>{
+    //定义一个监听器，监听文件是否有改变，如果有改变，则自动拷贝。
+    gulp.watch("*.html",async ()=>{
+        gulp.src("*.html")
+        .pipe(gulp.dest("E:\\PHP\\WWW\\fabu"));
+    });
+
+    gulp.watch("js/*.js",async ()=>{
+        gulp.src("js/*.js")
+        .pipe(gulp.dest("E:\\PHP\\WWW\\fabu\\js"));
+    });
+
+    gulp.watch("css/*.css",async ()=>{
+        gulp.src("css/.css")
+        .pipe(minicss())
+        .pipe(gulp.dest("E:\\PHP\\WWW\\fabu\\css"));
+    });
+    	
+    gulp.watch("sassdemos/**/*.scss",async ()=>{
+        gulp.src("sassdemos/**/*.scss")
+        .pipe(sass())
+        .pipe(minicss())
+        .pipe(gulp.dest("E:\\PHP\\WWW\\fabu\\css"));
+    });
+    gulp.watch("img/**/*",async ()=>{
+        gulp.src("img/**/*")
+        .pipe(gulp.dest("E:\\PHP\\WWW\\fabu\\img"));
+    });
+});
+// gulp.task("copyallfile",async function(){
+//     gulp.src("./**/*").
+//     pipe(gulp.dest("E:\\PHP\\WWW\\fabu"));
 // });
-//     // gulp.watch('*.img',async ()=>{
-//     //     gulp.src('*.img')
-//     //     .pipe(gulp.dest('E:\\PHP\\WWW\\fabu'));
-//     // });
-//     // gulp.watch('*.js',async ()=>{
-//     //     gulp.src('*.js')
-//     //     .pipe(gulp.dest('E:\\PHP\\WWW\\fabu'));
-//     // });
+
+// gulp.task("watchall",async ()=>{
+
+// 		gulp.watch("*.html",async ()=>{
+// 			gulp.src("*.html")
+//      .pipe(gulp.dest("E:\\PHP\\WWW\\fabu"));
+// 		});
+
+// 		gulp.watch("css/*.css",async ()=>{
+// 			gulp.src("css/*.css")
+//      .pipe(gulp.dest("E:\\PHP\\WWW\\fabu"));
+// 		});
+
+// 		gulp.watch("js/*.js",async ()=>{
+// 			gulp.src("js/*.js")
+//      .pipe(gulp.dest("E:\\PHP\\WWW\\fabu"));
+// 		});
+
 // })
-// 合并文件
-// gulp.task('hebingfile',async ()=>{
-//     gulp.src(['js/index.js','js/logins.js'])
-//     .pipe(concat('cendor.js'))
-//     .pipe(gulp.dest('E:\\PHP\\WWW\\fabu'));
-// })
-// sass监听
 

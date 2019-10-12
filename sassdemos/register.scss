@@ -1,0 +1,200 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,hr,td,input,textarea{
+	margin:0;
+	padding:0;
+}
+ul,ol,li{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+}
+body{
+	font-family: "微软雅黑";
+}
+body{
+    background: #f9f9f9;
+}
+/* 卷皮图标 */
+#boxOneLogo{
+    width:100% ;
+    height: 61px;;
+    margin:0 auto;
+    background: #ffffff;
+    border-bottom: 5px solid #ff464e;
+}
+#boxOne{
+    width: 300px;
+    height: 61px;
+    float: left;
+    margin-left: 62px;
+}
+#boxOneLogo #boxOne{
+    background: url(../img/registerimg/logo1.gif);
+    background-position: -60px -210px;
+}
+#boxTwo {
+    width: 545px;
+    height: 50px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 150px;
+    background: url(../img/registerimg/logo1.gif);
+    background-position: 55px 7px;
+}
+
+/* 用户注册 */
+#box{
+    width: 100%;
+}
+#boxs{
+    width: 88%;
+    height: 600px;
+    margin: 30px 80px;
+    border: 1px solid #d8d5d5;
+}
+#boxs #top{
+    width: 100%;
+    height: 94px;
+    border-bottom: 1px solid #d8d5d5;
+}
+#top p{
+    font-size: 21px;
+    color: #ff464e;
+    line-height: 94px;
+    text-indent: 56px;
+    float: left;
+}
+#top i{
+    font-size: 36px;
+    color: #f9f9f9;
+    line-height: 94px;
+    margin-left: 15px;
+}
+#top em{
+    font-size: 16px;
+    color: #666666;
+    font-style: initial;
+    align-items: center;
+    margin-left: 15px;
+    line-height: 94px;
+}
+#top a:nth-child(4){
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+#top a span{
+    color: #666666;
+}
+#top a:hover{
+    text-decoration: none;
+}
+
+#boxs form {
+    width: 60%;
+    height: 400px;
+    /* background: papayawhip; */
+    float: left;
+    margin-left: -162px;
+}
+#register .form-group{
+    width:100%;
+    height: 40px;
+    /* background: pink; */
+    margin-top: 30px;
+}
+#register .form-group .col-sm-2{
+    color: #666666;
+    font-weight: 500;
+    margin-left: 24px;
+    line-height: 40px;
+}
+#register .form-group .form-control{
+    width: 260px;
+    height: 40px;
+    margin-left: 120px;
+    margin-top: -45px;
+}
+#boxs form #yanZhengMa{
+    width: 142px;
+    height: 40px;
+}
+#boxs form #wenzizuoyi{
+    text-indent: 14px;
+}
+#huoQu{
+    width: 120px;
+    height: 40px;
+    margin-left: 265px;
+    margin-top: -62px;
+    color: #666666;
+}
+#boxs form .zhuceya{
+    width: 260px;
+    height: 40px;
+    margin-left: 8px;
+    border: #ff464e;
+    background: #ff464e;
+    color: white;
+}
+#boxs #imgs{
+    width: 40%;
+    float: right;
+    height: 400px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:  wrap;
+} 
+#tupian{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px double #cfcbcb;
+}
+#boxs #imgs img{
+    width: 30%;
+    height: 100px;
+    margin: 5px;
+}
+#boxs #imgs #big{
+    width: 63%;
+}
+#boxs #imgs span{
+    color: #666666;
+    font-weight: 500px;
+    margin-right: 290px;
+}
+#boxs #imgs #tubiao{
+    margin-right: 290px;
+}
+#boxs #imgs #tubiao img{
+    width: 30px;
+    height: 30px;
+}
+#box h5{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+#box h6{
+    line-height: 50px;
+    font-size: 14px;
+    margin-left: 80px;
+}
+.form-group span{
+    width: 120px;
+    height: 40px;
+    float: right;
+    line-height: 40px;
+    text-align: center;
+    text-indent: -275px;
+}
+.form-group span a:hover{
+    text-decoration: none;
+}
+label{
+    color: #666666;
+   
+}

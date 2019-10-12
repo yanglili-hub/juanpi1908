@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/iconfont1.css">
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>注册页面</title>
+    <title>登录页面</title>
 </head>
 <body>
     <!-- 卷皮图标 -->
@@ -16,14 +16,14 @@
         <div id="boxOne"></div>
         <div id="boxTwo"></div>
     </div>
-    <!-- 用户注册 -->
+    <!-- 用户登录 -->
     <div id="box">
         <div id="boxs">
             <div id="top">
                 <a href=""><p>老用户登录</p></a>
                 <i>/</i>
                 <a href=""><em>尊敬的卷皮用户，欢迎您回来！</em></a>
-                <a href=""><span>还没账号  , </span> 立即去注册</a>
+                <a  href="register.html" target="_blank"><span>还没账号  , </span> 立即去注册</a>
             </div>
             <form class="form-inline">
                 <!-- 用户名 -->
@@ -33,7 +33,10 @@
                     <div class="input-group-addon">
                         <span class="iconfont">&#xe600;</span>
                     </div>
-                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                    <input id="username" type="text" class="form-control" id="exampleInputAmount" placeholder="请输入用户名">
+                    <div id="messageBox">
+                        
+                    </div>
                   </div>
                 </div>
                 <!-- 密码 -->
@@ -43,7 +46,7 @@
                       <div class="input-group-addon">
                           <span class="iconfont">&#xe603;</span>
                       </div>
-                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                      <input id="passname" type="text" class="form-control" id="exampleInputAmount" placeholder="请输入密码">
                     </div>
                 </div>
                 <div class="checkbox">
