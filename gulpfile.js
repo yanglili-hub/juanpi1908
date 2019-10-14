@@ -8,6 +8,10 @@ gulp.task("watchall",async ()=>{
         gulp.src("*.html")
         .pipe(gulp.dest("E:\\PHP\\WWW\\fabu"));
     });
+    gulp.watch("php/*.php",async ()=>{
+        gulp.src("php/*.php")
+        .pipe(gulp.dest("E:\\PHP\\WWW\\fabu\\php"));
+    });
 
     gulp.watch("js/*.js",async ()=>{
         gulp.src("js/*.js")

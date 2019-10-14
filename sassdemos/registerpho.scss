@@ -146,7 +146,6 @@ body{
     height: 40px;
     margin-left: 265px;
     margin-top: -108px;
-    // color: #666666;
 }
 #huoQu:hover{
     color: #ff464e;
@@ -218,17 +217,7 @@ body{
 label{
     color: #666666;
 }
-.form-group{
-    .message{
-        width: 280px;
-        height: 18px;
-        background:pink;
-        
-    }
-    #qiangdu{
-        display: none;
-    }
-}
+
 #register .form-group .col-sm-10 .message{
     width: 130px;
     height: 18px;
@@ -241,8 +230,8 @@ label{
         height: 18px;
         float: left;
         text-align: center;
-        // background: green;
-        margin-left:43px; 
+        background: green;
+        margin-left:3px; 
     }
     i{
         font-style: inherit;

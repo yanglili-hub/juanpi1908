@@ -1,14 +1,26 @@
+非空判断
 
-//匹配1开头的11位手机号码
+function reg(){
+    let telphone=document.getElementById('telphone');
+    let createPass=document.getElementById('createPass');
+    if(telphone.value==''||createPass.value==''||querenPass.val==''){
+        alert('输入的内容不能为空');
+        return false;
+    }
+}
+    
+
+
+// 匹配1开头的11位手机号码
 // 手机号判断
     var ph=/^1[3|5|7|8|][0-9]{9}$/
     if($("#telphone").val()!=""){
         if(!(ph.test($("#telphone").val()))){
             $("#telphoneMes").text("请输入正确手机号");
-            // return false;
+            return false;
         }else if(ph){
             $("#telphoneMes").text("");
-            // return true;
+            return true;
         }
     }else{
             $("#telphoneMes").text("");
@@ -42,7 +54,7 @@ $("#col-sm-10 #createPass").blur(function(){
     
 })
 // 确认密码
-$('#querenPass').input(function(){
+$('#querenPass').keyup(function(){
     if($(this).val==''){
         $('#querenPass + .message').html='请再次输入密码';
     }else if($(this).val!==$('#createPass').val){
@@ -56,30 +68,8 @@ $("#yanZhengMa").click(function(){
     $('#yanZhengMa + .message').html('请输入验证码');
 })
 
-// ajax请求
-$("#zhuceya").onclick = function(){
-    //1、
-    let xhr = new XMLHttpRequest();
 
-    xhr.open("post","php/regSave.php",true);
 
-    xhr.onreadystatechange = function(){
-        if(xhr.readyState==4 && xhr.status==200){
-            if(xhr.responseText=="-1"){
-                $('.col-sm-10 .form-control+span').style.background=`url(../img/registerimg/error.gif) no-repeat`;
-                $('.col-sm-10 .form-control+span').style.backgroundposition=`1px -17px`;
-                $("#telphoneMes").innerHTML ="用户名被人使用";
-            }else if(xhr.responseText=="1"){
-                $('.col-sm-10 .form-control+span').style.background=`url(../img/registerimg/error.gif) no-repeat`;
-                $('.col-sm-10 .form-control+span').style.backgroundposition=`-38px -17px`;
-                $("#messageBox").innerHTML ="注册成功，请<a href='login.html'>登录</a>";
-            }
-        }
-    }
-    //post方式：设置请求头
-    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-    //post方式：把传给服务器端数据（键值对）放在send函数的参数里。
-    let sendstr = `username=${$("#createPass").value}&userpass=${$("#querenPass").value}`;
-    xhr.send(sendstr);
 
-}
+    
+
