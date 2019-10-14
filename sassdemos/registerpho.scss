@@ -17,6 +17,22 @@ body{
 body{
     background: #f9f9f9;
 }
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+        url('iconfont.woff2') format('woff2'),
+        url('iconfont.woff') format('woff'),
+        url('iconfont.ttf') format('truetype'),
+        url('iconfont.svg#iconfont') format('svg');
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 /* 卷皮图标 */
 #boxOneLogo{
     width:100% ;
@@ -129,7 +145,7 @@ body{
     width: 120px;
     height: 40px;
     margin-left: 265px;
-    margin-top: -64px;
+    margin-top: -108px;
     // color: #666666;
 }
 #huoQu:hover{
@@ -148,34 +164,29 @@ body{
     float: right;
     height: 400px;
     background: white;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap:  wrap;
 } 
 #tupian{
     margin-bottom: 10px;
     padding-bottom: 20px;
     border-bottom: 2px double #cfcbcb;
 }
-#boxs #imgs img{
-    width: 30%;
-    height: 100px;
-    margin: 5px;
+#boxs #imgs #tupian img{
+    margin-top: 20px;
 }
-#boxs #imgs #big{
-    width: 63%;
+#imgs p{
+    float: left;
+    clear: both;
 }
-#boxs #imgs span{
-    color: #666666;
-    font-weight: 500px;
-    margin-right: 290px;
-}
+
 #boxs #imgs #tubiao{
     margin-right: 290px;
 }
-#boxs #imgs #tubiao img{
-    width: 30px;
-    height: 30px;
+#boxs #imgs #tubiao span{
+    font-size: 32px;
+    margin:8px;
+}
+#boxs #imgs #tubiao span:hover{
+    color: #ff464e;
 }
 #box h5{
     margin-top: 50px;

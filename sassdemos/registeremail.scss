@@ -129,8 +129,11 @@ body{
     width: 120px;
     height: 40px;
     margin-left: 265px;
-    margin-top: -62px;
-    color: #666666;
+    margin-top: -64px;
+    // color: #666666;
+}
+#huoQu:hover{
+    color: #ff464e;
 }
 #boxs form .zhuceya{
     width: 260px;
@@ -199,15 +202,40 @@ label{
 }
 .form-group{
     .message{
-        width: 280px;
+        width: 250px;
         height: 18px;
-        background:pink;
+        background:red;
+        margin-left: 160px;
+        margin-top: 5px;
+    }
+    #qiangdu{
+        display: none;
     }
 }
-#register .form-group .col-sm-10 #message{
-    width: 260px;
+#register .form-group .col-sm-10 .message{
+    width: 130px;
     height: 18px;
     background: pink;
-    margin-left: 118px;
+    // display: none;
+    margin-left: 119px;
     margin-top: 5px;
+    #weak,#middle, #strong{
+        width: 40px;
+        height: 18px;
+        float: left;
+        text-align: center;
+        background: green;
+        margin-left:43px; 
+    }
+    i{
+        font-style: inherit;
+        text-indent: 0px;
+        margin-left: 275px;
+        line-height: 18px;
+    }
 }
+.col-sm-10 .message span{
+    line-height: 0px;
+}
+
+
