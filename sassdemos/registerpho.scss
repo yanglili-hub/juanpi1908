@@ -177,7 +177,14 @@ body{
     float: left;
     clear: both;
 }
-
+.col-sm-10 .form-control+span{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-left: 390px;
+    margin-top: -31px;
+    background:url(../img/registerimg/error.gif) no-repeat -38px -17px;
+}
 #boxs #imgs #tubiao{
     margin-right: 290px;
 }

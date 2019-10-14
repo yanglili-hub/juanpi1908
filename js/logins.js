@@ -29,7 +29,7 @@ $('#wenzi #left span').mouseout(function(){
 $("#btn btn-default").onclick=function(){
     let xhr = new XMLHttpRequest();
 
-    xhr.open("post","php/2loginCheck.php",true);
+    xhr.open("post","php/regSave.php",true);
 
     xhr.onreadystatechange = function(){
         if(xhr.readyState==4 && xhr.status==200){

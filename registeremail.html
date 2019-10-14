@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/registeremail.css">
+    <link rel="stylesheet" href="css/iconfont1.css">
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>邮箱注册页面</title>
@@ -54,19 +55,19 @@
                         <label for="inputPassword3" class="col-sm-2 control-label">确认密码：</label>
                         <div class="col-sm-10">
                           <input id="querenPass" type="password" class="form-control" id="inputPassword3">
-                          <div class="message">
+                          <!-- <div class="message">
                               
-                          </div>
+                          </div> -->
                         </div>
                     </div>
                     <!-- 手机号 -->
                     <div class="form-group">
-                            <label for="inputEmail3"  class="col-sm-2 control-label">邮箱账号：</label> <span>或&nbsp;&nbsp;&nbsp;<a href="">手机注册</a></span>
+                            <label for="inputEmail3"  class="col-sm-2 control-label">手机号码：</label>
                             <div  class="col-sm-10">
                                 <input id="telphone" type="text" class="form-control" id="inputEmail3" >
-                                <div class="message" id="telphoneMes">
+                                <!-- <div class="message" id="telphoneMes">
                                     
-                                </div>
+                                </div> -->
                             </div>  
                         </div>
                     <!-- 验证码： -->
@@ -74,9 +75,9 @@
                         <label for="inputPassword3" id="wenzizuoyi" class="col-sm-2 control-label">验证码：</label>
                         <div class="col-sm-10">
                           <input type="password" id="yanZhengMa" class="form-control" id="inputPassword3" placeholder="验证码">
-                          <div class="message">
+                          <!-- <div class="message">
                               
-                          </div>
+                          </div> -->
                         <button  type="submit" id="huoQu" class="btn btn-default"> 获取短信验证码</button>
                     </div>
                     </div>
@@ -89,7 +90,7 @@
                       <div class="col-sm-offset-2 col-sm-10">
                         <div class="checkbox">
                           <label>
-                            <input type="checkbox"> 我已阅读并接受 <a>《卷皮用户协议》</a>
+                            <input type="checkbox" checked> 我已阅读并接受 <a>《卷皮用户协议》</a>
                           </label>
                         </div>
                       </div>
@@ -97,22 +98,15 @@
                     
               </form>
            
-            <div id="imgs">
+              <div id="imgs">
                  <div id="tupian"> 
-                    <img src="img/registerimg/b1.gif" alt="">
-                    <img src="img/registerimg/d1.png" alt="">
-                    <img src="img/registerimg/app2.gif" alt="">
-                    <img src="img/registerimg/b1.gif" alt="">
-                    <img id="big" src="img/registerimg/b2.gif" alt="">
-                    <img src="img/registerimg/d1.png" alt="">
-                    <img src="img/registerimg/app2.gif" alt="">
-                    <img src="img/registerimg/b1.gif" alt="">
+                    <img src="img/registerimg/login-bj1.png" alt="">                    
                  </div>
-                <span>无需注册，快捷登录</span>
+                <p>无需注册，快捷登录</p>
                 <div id="tubiao">
-                    <img src="img/registerimg/aa1.png" alt="">
-                    <img src="img/registerimg/aaa2.png" alt="">
-                    <img src="img/registerimg/aa3.png" alt="">
+                  <span class="iconfont">&#xe673;</span>
+                  <span class="iconfont">&#xe636;</span>
+                  <span class="iconfont">&#xe609;</span>
                 </div>
             </div>
         </div>
@@ -125,5 +119,26 @@
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
+  $(".zhuceya").click(function(){
+      if($("form input").val=''){
+          alert('亲，输入的内容不能为空');
+          return false;
+      }
+  })
+  
+  //点击input框，让其边框获得颜色
+  $(document).ready(function(){
+    $("form  .form-control").focus(function(){
+      // for(let i;i<$("form  .form-control").length;i++){
+        $("form  .form-control").css('borderColor','black');
+      // }
+    })
+    $("form  .form-control").focusout(function(){
+      // for(let i;i<$("form  .form-control").length;i++){
+          $("form  .form-control").css('borderColor','#ff464e');
+      // }
+    })
+  })
+  
 
 </script>

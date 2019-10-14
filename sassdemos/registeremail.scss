@@ -15,7 +15,7 @@ body{
 	font-family: "微软雅黑";
 }
 body{
-    background: #f9f9f9;
+    background: #cfcbcb;
 }
 /* 卷皮图标 */
 #boxOneLogo{
@@ -95,8 +95,7 @@ body{
 
 #boxs form {
     width: 60%;
-    height: 400px;
-    /* background: papayawhip; */
+    height: 430px;
     float: left;
     margin-left: -162px;
 }
@@ -130,10 +129,13 @@ body{
     height: 40px;
     margin-left: 265px;
     margin-top: -64px;
-    // color: #666666;
+    color: #666666;
 }
 #huoQu:hover{
     color: #ff464e;
+}
+form  .form-control{
+    border-radius: 0px;
 }
 #boxs form .zhuceya{
     width: 260px;
@@ -143,39 +145,37 @@ body{
     background: #ff464e;
     color: white;
 }
+#boxs form .zhuceya:hover{
+    opacity: .8;
+}
 #boxs #imgs{
     width: 40%;
     float: right;
     height: 400px;
-    background: white;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap:  wrap;
 } 
+
 #tupian{
     margin-bottom: 10px;
     padding-bottom: 20px;
     border-bottom: 2px double #cfcbcb;
 }
-#boxs #imgs img{
-    width: 30%;
-    height: 100px;
-    margin: 5px;
+#boxs #imgs #tupian img{
+    margin-top: 20px;
 }
-#boxs #imgs #big{
-    width: 63%;
+#imgs p{
+    float: left;
+    clear: both;
 }
-#boxs #imgs span{
-    color: #666666;
-    font-weight: 500px;
-    margin-right: 290px;
-}
+
 #boxs #imgs #tubiao{
     margin-right: 290px;
 }
-#boxs #imgs #tubiao img{
-    width: 30px;
-    height: 30px;
+#boxs #imgs #tubiao span{
+    font-size: 32px;
+    margin-right:8px;
+}
+#boxs #imgs #tubiao span:hover{
+    color: #ff464e;
 }
 #box h5{
     margin-top: 50px;
@@ -208,8 +208,9 @@ label{
         margin-left: 160px;
         margin-top: 5px;
     }
-    #qiangdu{
-        display: none;
+    #qiangdu span{
+        line-height: 18px;
+        width: 70px;
     }
 }
 #register .form-group .col-sm-10 .message{
@@ -220,22 +221,22 @@ label{
     margin-left: 119px;
     margin-top: 5px;
     #weak,#middle, #strong{
-        width: 40px;
+        width: 30px;
         height: 18px;
         float: left;
         text-align: center;
-        background: green;
-        margin-left:43px; 
+        background: #ff464e;
+    }
+    #middle{
+        margin:0px 20px;
     }
     i{
         font-style: inherit;
         text-indent: 0px;
         margin-left: 275px;
         line-height: 18px;
+        color: white;
     }
-}
-.col-sm-10 .message span{
-    line-height: 0px;
 }
 
 

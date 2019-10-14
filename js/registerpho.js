@@ -66,13 +66,12 @@ $("#zhuceya").onclick = function(){
     xhr.onreadystatechange = function(){
         if(xhr.readyState==4 && xhr.status==200){
             if(xhr.responseText=="-1"){
-                // $(".message").style.color ="red";
+                $('.col-sm-10 .form-control+span').style.background=`url(../img/registerimg/error.gif) no-repeat`;
+                $('.col-sm-10 .form-control+span').style.backgroundposition=`1px -17px`;
                 $("#telphoneMes").innerHTML ="用户名被人使用";
-            }else if(xhr.responseText=="0"){
-                // $("#messageBox").style.color ="red";
-                // $("#messageBox").innerHTML ="注册失败";
             }else if(xhr.responseText=="1"){
-                // $("#messageBox").style.color ="greenyellow";
+                $('.col-sm-10 .form-control+span').style.background=`url(../img/registerimg/error.gif) no-repeat`;
+                $('.col-sm-10 .form-control+span').style.backgroundposition=`-38px -17px`;
                 $("#messageBox").innerHTML ="注册成功，请<a href='login.html'>登录</a>";
             }
         }
