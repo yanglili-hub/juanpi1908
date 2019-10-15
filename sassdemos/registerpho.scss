@@ -221,7 +221,7 @@ label{
 #register .form-group .col-sm-10 .message{
     width: 130px;
     height: 18px;
-    background: pink;
+    background: yellow;
     // display: none;
     margin-left: 119px;
     margin-top: 5px;
@@ -242,6 +242,9 @@ label{
 }
 .col-sm-10 .message span{
     line-height: 0px;
+}
+#qiangdu span{
+    display: none;
 }
 
 
