@@ -64,8 +64,8 @@
                     <div class="form-group" >
                         <label for="inputPassword3" id="wenzizuoyi" class="col-sm-2 control-label">验证码：</label>
                         <div class="col-sm-10">
-                          <input type="password" id="yanZhengMa" class="form-control" id="inputPassword3" placeholder="验证码"><span class="spans"></span>
-                          <div class="message">
+                          <input type="text" id="yanZhengMa" class="form-control" id="inputPassword3" placeholder="验证码"><span class="spans"></span>
+                          <div class="message" id="huoquMA">
                               
                           </div>
                         <button  type="button" id="huoQu" class="btn btn-default"> 获取短信验证码</button>
@@ -114,47 +114,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script>
 
-
-let telphoneMes=document.getElementById('telphoneMes');
-let spans=document.getElementsByClassName('spans');
-let telphone=document.getElementById('telphone');
-let createPass=document.getElementById('createPass');
-
-// zhuceya[0].onclick=function(){
-//     check();
-// }
-// ajax请求
-// zhuceya[0].onclick=function(){
-//     // 1、
-//     let xhr = new XMLHttpRequest();
-
-//     xhr.open("post","php/regSave.php",true);
-
-//     xhr.onreadystatechange = function(){
-//         if(xhr.readyState==4 && xhr.status==200){
-//             if(xhr.responseText=="-1"){
-//                 spans[0].style.background=`url(img/registerimg/error.gif) no-repeat`;
-
-//                 spans[0].style.backgroundPosition=`1px -17px`;
-                
-//                 telphoneMes.innerHTML ="该手机号已注册过,请换个手机号注册";
-//             }else if(xhr.responseText=="1"){
-//                 spans[0].style.background=`url(img/registerimg/error.gif) no-repeat`;
-//                 spans[0].style.backgroundPosition=`-38px -17px`;
-            
-//                 telphoneMes.innerHTML ="恭喜你，注册成功 <a href='index.html'></a> ";
-//             }else if(xhr.responseText=="0"){
-//                 spans[0].style.background=`url(img/registerimg/error.gif) no-repeat`;
-//                 spans[0].style.backgroundPosition=`1px -17px`;
-//                 telphoneMes.innerHTML ="注册失败，请重新注册";
-//             }
-//         }
-//     }
-//     //post方式：设置请求头
-//     xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-//     //post方式：把传给服务器端数据（键值对）放在send函数的参数里。
-//     let sendstr = `username=${telphone.value}&userpass=${createPass.value}`;
-//     xhr.send(sendstr);
-// }
 
 </script>

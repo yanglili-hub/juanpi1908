@@ -229,3 +229,20 @@ form #wenzi{
         }
     }
 }
+#father{
+    position: relative;
+}
+#messageBox{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    left: 230px;
+    img{
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+        margin-top: 8px;
+        display: none;
+    }
+}

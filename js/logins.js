@@ -26,28 +26,29 @@ $('#wenzi #left span').mouseout(function(){
     })
 })
 // ajax请求
-$("#btn btn-default").onclick=function(){
+$("#denglu").click(function(){
+    //1、
     let xhr = new XMLHttpRequest();
 
-    xhr.open("post","php/regSave.php",true);
+    xhr.open("post","../php/2loginCheck.php",true);
 
     xhr.onreadystatechange = function(){
         if(xhr.readyState==4 && xhr.status==200){
             if(xhr.responseText=="1"){
-                addCookie("username",$("#username").value,14);
-                addCookie("passname",$("#passname").value,14);
+                // addCookie("username",$("#username").value,14);
                 location.href="index.html";
             }else{
-                $("#messageBox").innerHTML = "亲，用户名或者密码不对";
+                $("#messageBox").css(show());
             }
         }
     }
     //post方式：设置请求头
     xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     //post方式：把传给服务器端数据（键值对）放在send函数的参数里。
-    let sendstr = `username=${$("#username").value}&passname=${$("#passname").value}`;
+    let sendstr = `username=${$("#username").value}&userpass=${$("#passname").value}`;
     xhr.send(sendstr);
-}
+}) 
+    
 
 // 14天之内免登录
     // $("#btn-default").onclick=function(){
