@@ -34,7 +34,7 @@ body{
     margin-left: 62px;
 }
 #boxOneLogo #boxOne{
-    background: url(../../img/logo1.gif);
+    background: url(../img/registerimg/logo1.gif);
     background-position: -60px -210px;
 }
 #boxTwo {
@@ -43,7 +43,7 @@ body{
     float: left;
     margin-top: 10px;
     margin-left: 150px;
-    background: url(../img/logo1.gif);
+    background: url(../img/registerimg/logo1.gif);
     background-position: 55px 7px;
 }
 
@@ -239,10 +239,10 @@ form #wenzi{
     z-index: 2;
     left: 230px;
     img{
-        width: 24px;
-        height: 24px;
-        margin-left: 8px;
-        margin-top: 8px;
+        width: 21px;
+        height: 21px;
+        margin-left: 10px;
+        margin-top: 10px;
         display: none;
     }
 }

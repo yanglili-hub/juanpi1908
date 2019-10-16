@@ -182,7 +182,7 @@ body{
     float: left;
     margin-left: 390px;
     margin-top: -31px;
-    background:url(../img/registerimg/error.gif) no-repeat -38px -17px;
+    background:url(../img/registerimg/error.gif) no-repeat 1px -17px;
 }
 #boxs #imgs #tubiao{
     margin-right: 290px;
@@ -245,8 +245,21 @@ label{
 .col-sm-10 .message span{
     line-height: 0px;
 }
-#qiangdu span{
-    display: none;
+#qiangdu {
+    // display: none;
+}
+#fangZhi{
+    width: 100px;
+    height: 100px;
+    opacity: 0;
 }
 
-
+.progress-bar_wrap {
+    width: 200px;
+    height: 5px;
+    background: #ff464e;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    overflow: hidden;
+  }

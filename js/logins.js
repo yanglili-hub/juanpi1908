@@ -30,36 +30,29 @@ $("#denglu").click(function(){
     //1、
     let xhr = new XMLHttpRequest();
 
-    xhr.open("post","../php/2loginCheck.php",true);
+    xhr.open("post","php/2loginCheck.php",true);
 
     xhr.onreadystatechange = function(){
         if(xhr.readyState==4 && xhr.status==200){
             if(xhr.responseText=="1"){
-                // addCookie("username",$("#username").value,14);
-                location.href="index.html";
-            }else{
-                $("#messageBox").css(show());
+                if($('#mianDengLu').status='checked'){
+                    addCookie("username",$("#username").val(),14);
+                    addCookie("passname",$("#passname").val(),14);
+                    location.href="index.html";
+                }
+            }else if(xhr.responseText=='0'){
+                $("#messageBox img").show();
+               // 点击插插符号
+                $('#messageBox img').click(function(){
+                    $(this).hide();
+                    $('#passname').html('');
+                })
             }
         }
     }
     //post方式：设置请求头
     xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     //post方式：把传给服务器端数据（键值对）放在send函数的参数里。
-    let sendstr = `username=${$("#username").value}&userpass=${$("#passname").value}`;
+    let sendstr = `username=${$("#username").val()}&userpass=${$("#passname").val()}`;
     xhr.send(sendstr);
 }) 
-    
-
-// 14天之内免登录
-    // $("#btn-default").onclick=function(){
-    //     if($("#checkbox").val=checked){
-    //         var d = new Date();
-    //         var currentTime = d.getTime();
-    //         currentTime += 14*24*60*60*1000;
-    //         d.setTime(currentTime);
-    //         console.log(username);
-    //         console.log(password);
-    //         document.cookie = "username="+username+";expires="+d;
-    //         document.cookie = "password="+password+";expires="+d;
-    //     }
-    // }
