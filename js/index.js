@@ -182,3 +182,26 @@ $("#gudingThree #addTwo").mouseenter(function(){
   })
 
   // 分页跳页
+
+  // 显示cookie里的用户名
+  function showUser(){
+    let username = getCookie('username');
+    if(username!=null){
+        $("#yongHuName").html(username);
+        $(".dropdown").show();
+        $(".dropdown").next('.myOne').hide();
+        $('#myTwo').hide();
+    }else{
+      $(".dropdown").hide();
+      $(".dropdown").next('.myOne').show();
+      $('#myTwo').show();
+    }
+}
+window.onload = function(){
+  showUser(); 
+  
+  $(".dropdown-menu").last().click(function(){
+      removeCookie("username");
+      showUser();
+  })
+}

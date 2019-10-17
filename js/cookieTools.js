@@ -31,7 +31,7 @@ function getCookie(key){
     //document.cookie的示例： usernamet=hi; username=jzm; userpass=123
     var str = unescape(document.cookie);//unescape:解码
     //1、分割成数组
-    let arr = str.split(";  "); //arr=["usernamet=hi","username=jzm","userpass=123"];
+    let arr = str.split("; "); //arr=["usernamet=hi","username=jzm","userpass=123"];
     //2、循环arr，
     for(var i in arr){
         if(arr[i].startsWith(key+"=")){

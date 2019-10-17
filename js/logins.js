@@ -35,17 +35,22 @@ $("#denglu").click(function(){
     xhr.onreadystatechange = function(){
         if(xhr.readyState==4 && xhr.status==200){
             if(xhr.responseText=="1"){
-                if($('#mianDengLu').status='checked'){
+                $('#information').html('');
+                if($('#mianDengLu').is(':checked')){
                     addCookie("username",$("#username").val(),14);
                     addCookie("passname",$("#passname").val(),14);
                     location.href="index.html";
                 }
+                location.href="index.html";
+
             }else if(xhr.responseText=='0'){
+                $('#information').html('用户名或密码错误');
                 $("#messageBox img").show();
                // 点击插插符号
                 $('#messageBox img').click(function(){
-                    $(this).hide();
-                    $('#passname').html('');
+                    $('#username').val("");
+                    $('#passname').val("");
+                    $('#messageBox img').hide();
                 })
             }
         }

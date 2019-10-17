@@ -182,6 +182,13 @@ body{
     float: left;
     margin-left: 390px;
     margin-top: -31px;
+}
+.col-sm-10 .form-control+.dui{
+    background:url(../img/registerimg/error.gif) no-repeat -38px -17px;
+    display: none;
+}
+.col-sm-10 .form-control+.error{
+    display: none;    
     background:url(../img/registerimg/error.gif) no-repeat 1px -17px;
 }
 #boxs #imgs #tubiao{
@@ -246,7 +253,7 @@ label{
     line-height: 0px;
 }
 #qiangdu {
-    // display: none;
+    display: none;
 }
 #fangZhi{
     width: 100px;
