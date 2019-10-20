@@ -142,7 +142,7 @@ header .dropdown:hover .dropdown-menu{
     height: 45px;
     position: absolute;
     top: 61px;
-    left: 747px;
+    left: 727px;
 }
 #boxOneLogo .input-group-addon{
     background: #ff464e;
@@ -482,9 +482,9 @@ nav ul #app3{
         }
     }
     #information{
-        width: 35%;
+        width: 36%;
         box-sizing: border-box;
-        height: 486px;
+        height: 410px;
         margin-top: 50px;
         display: flex;
         flex-direction: column;
@@ -493,8 +493,62 @@ nav ul #app3{
         }
         #mains{
             width: 100%;
-            height: 150px;
-            background: #ac3030;
+            height: 100px;
+            background: #d6bebe;
+            #left{
+                width: 70%;
+                height: 100px;
+                float: left;
+                h3{
+                    color: #ff464e;
+                    font-size: 32px;
+                    span{
+                        font-size: 24px;
+                    }
+                }
+                p{
+                    margin-left: 120px;
+                    font-size: 20px;
+                    margin-top: -30px;
+                    color: #666666;
+                }
+                b{
+                    line-height: 22px;
+                    display: block;
+                    font-weight: 500;
+                    color: #666;
+                    margin-top: 19px;
+                    h5{
+                        width: 50px;
+                        height: 20px;
+                        background: orange;
+                        margin-left: 50px;
+                        margin-top: -20px;
+                        text-align: center;
+                        line-height: 20px;
+                    }
+                    h4{
+                        font-size: 14px;
+                        color: #444444;
+                        margin-left: 107px;
+                        margin-top: -24px;
+                        a{
+                            color: #444444;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+               
+            }
+            #right{
+                width: 30%;
+              
+                float: right;
+                span{
+                    margin-top: 20px;
+                    display: block;
+                }
+            }
         }
         #way{
             width: 100%;
@@ -557,6 +611,9 @@ nav ul #app3{
                     color: #ff464e;
                  }
             }
+            #buy:hover{
+                background: white;
+            }
             #buyTwo{
                 width: 150px;
                 height: 50px;
@@ -569,6 +626,9 @@ nav ul #app3{
 
                 }
             }
+            #buyTwo:hover{
+                background: red;
+            }
             a{
                 text-align: center;
                 margin-left: 30px;
@@ -579,14 +639,414 @@ nav ul #app3{
             }
         }
     }
+    #shengShi{
+        width: 300px;
+        height: 200px;
+        background: #dad4d4;
+        border: 1px solid #9c9c9c;
+        margin-top: -15px;
+        display: none;
+        li{
+            width: 25%;
+            height: 24px;
+            float: left;
+            color: rgb(62, 62, 100);
+        }
+    }
     #shop{
         width: 24%;
-        height: 538px;
-        background: peru;
+        height: 480px;
+        position: relative;
+        border: 1px solid #666666;
+        margin-top: 30px;
+        #shoppingName{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            margin:30px 70px;
+            img{
+                margin-left: 50px;
+                border: 1px solid #666666;
+            }
+            h5{
+                font-size: 18px;
+                margin-left: 30px;
+                margin-top: 20px;
+            }
+            p{
+                margin-left: 45px;
+                line-height: 36px;
+                color: #9c9c9c;
+            }
+        }
+        #xinxi{
+            width: 70%;
+            // height: 100px;
+            border-top: 1px dashed #9c9c9c;
+            margin-top: 200px ;
+            margin-left: 40px;
+            li{
+                margin-top: 20px;
+            }
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            span{
+                margin-left: 10px;   
+            }
+            #last{
+                padding-top: 20px;
+                border-top: 1px dashed #9c9c9c;
+            }
+
+        }
+    }
+    #information #information #way h6 select {
+        width: 60px;
+    }
+    #information #information #way h6 select option{
+        width: 0px;
+        height: 0px;
     }
 // 又是一个导航栏
 #shiNav{
-    width: 100%;
+    width: 72%;
     height: 250px;
-    background: #333333;
+    margin-left: 30px;
+    ul{
+        border-top: 2px solid #9c9c9c;
+        border-bottom: 2px solid #9c9c9c;
+        li{
+            width: 128px;
+            height: 60px;
+            background: #fdf9f9;
+            float: left;
+            border-left: 2px solid #9c9c9c;
+            a{
+                display: block;
+                color: #333333;
+                line-height: 60px;
+                text-align: center;
+            }
+            a:hover{
+                color: #ff464e;
+            }
+        }
+    }
+    #weizi{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        float: left;
+        font-size: 24px;
+        span{
+            color: #ff464e;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+        h1{
+            width: 730px;
+            margin-left: 159px;
+            margin-top: -14px;
+            height: 2px;
+            background: #333333;
+        }
+        #imgs{
+            margin-top: 30px;
+            margin-left: 60px;
+        }
+        table{
+            margin-top: 50px;
+            td{
+                width: 250px;
+                height: 40px;
+                font-size: 15px;
+                text-align: center;
+                color: #666666;
+                border-color: #9c9c9c;
+            }
+        }
+        #wuliu{
+            font-size: 13px;
+            margin-left: 100px;
+            line-height: 30px;
+            p:nth-child(1){
+                margin-top: 30px;
+            }
+            img{
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+        #top{
+            width: 90%;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 100px;
+            #smallImgOne{
+                width: 100px;
+                height: 100px;
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: 20px 6px;
+            }
+            #smallImgOne:hover{
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: 20px -93px;
+            }
+            #smallImgTwo{
+                width: 100px;
+                height: 100px;
+                margin-top: -100px;
+                margin-left: 120px;
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: -91px 6px;
+            }
+            #smallImgTwo:hover{
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: -91px -93px;
+            }
+            #smallImgThree{
+                width: 100px;
+                height: 100px;
+                margin-top: -100px;
+                margin-left: 240px;
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: -211px 6px;
+            }
+            #smallImgThree:hover{
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: -211px -93px;
+            }
+            #smallImgFour{
+                width: 100px;
+                height: 100px;
+                margin-top: -100px;
+                margin-left: 360px;
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: -322px 6px;
+            }
+            #smallImgFour:hover{
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: -322px -93px;
+            }
+            #smallImgFive{
+                width: 100px;
+                height: 100px;
+                margin-top: -100px;
+                margin-left: 480px;
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: -433px 6px;
+            }
+            #smallImgFive:hover{
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: -433px -93px;
+            }
+            #smallImgSix{
+                width: 100px;
+                height: 100px;
+                margin-top: -100px;
+                margin-left: 600px;
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: -553px 6px;
+            }
+            #smallImgSix:hover{
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: -553px -93px;
+            }
+            #smallImgSeven{
+                width: 100px;
+                height: 100px;
+                margin-top: -100px;
+                margin-left: 720px;
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: -666px 6px;
+            }
+            #smallImgSeven:hover{
+                background: url(../img/shoppingInformationimg/gg7.gif) no-repeat;
+                background-position: -666px -93px;
+            }
+            
+
+        }
+        
+    }
+   
+}
+#shiNav li:nth-child(6),li:nth-child(7){
+    border-left: none;
+}
+#shiNav li:last-child{
+    border-right: 2px solid #9c9c9c;
+}
+#rightss{
+    width: 25%;
+    float: right;
+    margin-top: -6721px;
+    border: 1px solid #b3abab;
+    #shiZhuchang{
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        background: #fdf9f9;
+        border-bottom: 1px solid #b3abab;
+    }
+    #shangPing{
+            #one{
+            width: 100%;
+            img{
+                float: left;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            #XinxiYa{
+                width: 214px;
+                height: 60px;
+                margin-top: 20px;
+                float: right;
+                a{
+                    color: #333333;
+                }
+                span{
+                    color: #ff464e;
+                    font-size: 17px;
+                }
+                b{
+                    color: #333333;
+                    margin-left: 10px;
+                    font-weight: 500;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}
+#juLiTop{
+    margin-top: 50px;
+}
+/* 底部内容 */
+footer{
+    width: 100%;
+    background: #b3abab;
+    margin-top: 60px;
+}
+footer #kong{
+    width: 100%;
+    height: 30px;
+    background: #f9f9f9;
+}
+footer #wenzi{
+    width: 65%;
+    float: left;
+    margin-top: 30px;
+}
+footer #wenzi img{
+    float: left;
+    margin-left: 100px;
+}
+footer #wenzi p{
+    margin-left: 100px;
+    margin-top: 143px;
+}
+footer #lefts li{
+    color: #a2a2a2;
+}
+#wenzi #lefts{
+    float: left;
+    width: 577px;
+    height: 220px;
+    margin-left: 243px;
+    margin-top: -173px;
+    display: flex;
+    justify-content: space-around;
+}
+#lefts li{
+    list-style-type: disc;
+    font-size:14px;
+}
+#lefts b{
+    font-size: 16px;
+}
+footer .leftsOne a{
+    font-size: 16px;
+    color: #666666;
+    line-height: 38px;
+}
+footer #informationss{
+    width: 35%;
+    height: 220px;
+    float: right;
+    margin-top: 30px;
+} 
+footer #informationss img{
+    width: 120px;
+    height:60px;
+    margin-top:40px;
+    margin-left: 180px;
+}
+#informationss span{
+    margin-left: 10px;
+    color: #a2a2a2;
+
+}
+#informationss p{
+    margin-left: 315px;
+    margin-top: -32px;
+    color: #a2a2a2;
+}
+#informationss b{
+    color: #a2a2a2;
+    margin-left: 180px;
+    font-weight: 100;
+}
+#xuanfu{
+    display: none;
+    span{
+        font-size: 26px;
+    }
+}
+#shiNav #xuanfu li:nth-child(6){
+    font-size: 22px;
+    color: #ff464e;
+}
+#shiNav #xuanfu li:last-child{
+    background: #ff464e;
+    color: white;
+    font-size: 22px;
+}
+#shiNav #xuanfu li:last-child:hover{
+    background: red;
+    color: white;
+}
+#yuanXian {
+    position: relative;
+}
+#yuanXian li{
+    border-bottom: none;
+}
+#yuanXian li:nth-child(1){
+    border-bottom: 3px solid red;
+}
+#yuanXian #erweima{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    left: 768px;
+    top: 63px;
+    z-index: 1;
+    display: none;
+}
+#yuanXian #phone:hover #erweima{
+    display: block;
+}
+#xuanfu img{
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    left: 500px;
+    top: 63px;
+    display: none;    
+}
+#xuanfu #phone:hover #phoneImg{
+    display: block;
 }

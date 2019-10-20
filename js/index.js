@@ -98,7 +98,7 @@ var daojishi=$(function () {
           $(".navOne ").slideToggle('slow');
       },3000)
   })
-  
+//  划过一定的高度让其固定 
 window.onscroll = function(){
   var xuanfu = document.getElementById("xuanfu");
   var _scroll = document.body.scrollTop || document.documentElement.scrollTop;
